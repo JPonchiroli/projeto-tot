@@ -1,9 +1,12 @@
+import logo from '../assets/tot-logo.png';
+import welcome from '../assets/welcome.png';
+
 export default function Header() {
     return (
         <header >
             <nav>
 
-                <img src="#" alt="TOT Logo" />
+                <img src={logo} alt="TOT Logo" />
 
                 <div>
 
@@ -31,7 +34,7 @@ export default function Header() {
             </section>
 
             <section>
-                <img src="#" alt="Imagem Header" />
+                <img src={welcome} alt="Imagem Header" />
             </section>
         </header>
     )
