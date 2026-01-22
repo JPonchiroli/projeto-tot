@@ -54,7 +54,7 @@ export default function Main() {
                 <h2 className="text-[#ffe5c9] text-3xl font-semibold mb-4">Soluções com propósito</h2>
                 <p className="font-extralight">Entender o contexto, personalizar a jornada e caminhar lado a lado.</p>
 
-                <div className="flex justify-between py-7">
+                <div className="flex gap-3 justify-center py-7">
                     <Solucoes src={cursosPersonalizados} alt="Cursos Personalizados"/>
                     <Solucoes src={cursosPrateleiras} alt="Cursos Personalizados"/>
                     <Solucoes src={plataformaAprendizagem} alt="Cursos Personalizados"/>
