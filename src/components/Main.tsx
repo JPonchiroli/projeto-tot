@@ -118,14 +118,13 @@ export default function Main() {
 
             </section>
 
-            <section>
-                <h2>Confira os nossos Cursos de Prateleira</h2>
+            <section className="flex flex-col items-center mt-25">
+                <h2 className="text-[#e34926] text-3xl font-semibold mb-3">Confira os nossos Cursos de Prateleira</h2>
 
                 <CarrouselCursos />
             </section>
 
-            <section>
-                <h2>Agende uma demonstração</h2>
+            <section className="bg-[#151616] mx-35 my-5 px-7 py-7 rounded-3xl">
                 <Form />
             </section>
         </main>
