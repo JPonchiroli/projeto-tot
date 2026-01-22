@@ -8,19 +8,31 @@ import InfoCards from "./InfoCards"
 import Form from "./Form"
 import CarouselClientes from "./CarouselClientes"
 import CarrouselCursos from "./CarouselCursos"
+import MainButton from "./MainButton"
 
 export default function Main() {
     return (
         <main>
-            <section>
+            <section className="bg-[#e34926] flex flex-col text-center p-7">
 
-                <h1>
-                    Soluções educativas, entrega de conhecimento e conexão para a sua organização.
+                <h1 className="text-4xl text-white font-semibold tracking-wider">
+                    Soluções educativas, entrega de conhecimento <br />
+                    e conexão para a sua organização.
                 </h1>
 
-                <p>Conteúdos estratégicos, desenvolvidos para a sua realidade, adaptados para os seus colaboradores e personalizados para sua empresa. Com a TOT, o cliente nunca anda sozinho.</p>
+                <p className="text-1xl text-white font-extralight my-3 tracking-wider">
+                    Conteúdos estratégicos, desenvolvidos para a sua realidade, adaptados para os seus <br />
+                    colaboradores e personalizados para sua empresa. <b>Com a TOT, o cliente nunca anda <br />
+                    sozinho.</b>
+                </p>
 
-                <button>Agendar demonstração</button>
+                <div className="m-5">
+                    <MainButton 
+                        titulo="Agendar demonstração"
+                        backgroundColor="bg-[#ffe5c9]"
+                        textColor="text-black"
+                    />
+                </div>
 
             </section>
 
@@ -28,26 +40,31 @@ export default function Main() {
                 <img src={welcome} alt="Imagem Header" />
             </section>
 
-            <section>
-                <h2>Nossos cliente</h2>
-                <p>As empresas que geramos as experiências desejadas!</p>
+            <section className="bg-[#ffe5c9] px-28 py-10">
+
+                <h2 className="text-[#e34926] text-3xl font-semibold mb-4">Nossos cliente</h2>
+                <p className="font-extralight">As empresas que geramos as experiências desejadas!</p>
 
                 <CarouselClientes />
+
             </section>
 
-            <section>
-                <h2>Soluções com propósito</h2>
-                <p>Entender o contexto, personalizar a jornada e caminhar lado a lado.</p>
+            <section className="bg-[#e34926] px-28 py-10">
 
-                <div>
+                <h2 className="text-[#ffe5c9] text-3xl font-semibold mb-4">Soluções com propósito</h2>
+                <p className="font-extralight">Entender o contexto, personalizar a jornada e caminhar lado a lado.</p>
+
+                <div className="flex justify-between py-7">
                     <Solucoes src={cursosPersonalizados} alt="Cursos Personalizados"/>
                     <Solucoes src={cursosPrateleiras} alt="Cursos Personalizados"/>
                     <Solucoes src={plataformaAprendizagem} alt="Cursos Personalizados"/>
                     <Solucoes src={consultoriaEducacional} alt="Cursos Personalizados"/>
                 </div>
+
             </section>
 
-            <section>
+            <section className="flex gap-8 justify-center m-10">
+
                 <InfoCards 
                     src="https://static.wixstatic.com/media/611af1_bc8bd57236f84fbdb8aab06f2625cd03~mv2.png/v1/fill/w_114,h_102,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aprendizes_impactados.png"
                     alt="aprendizes_impactados"
@@ -68,15 +85,28 @@ export default function Main() {
                     titulo="97%"
                     subtitulo="de engajamento e conclusão dos cursos desenvolvidos pela TOT"
                 />
+
             </section>
 
-            <section>
-                <div>
-                    <h2>Material Gratuito</h2>
-                    <p>Conheça o nosso Manual da Universidade Corporativa. Nele, </p>
-                    <p> você encontrará os 6 passos para uma implantação de </p>
-                    <p>sucesso na sua empresa. Aproveite!</p>
-                    <button>BAIXE AGORA</button>
+            <section className="bg-[#ee5923] flex justify-around mx-60 rounded-3xl">
+
+                <div className="text-left content-center">
+
+                    <h2 className="text-white text-5xl font-semibold mb-3">Material Gratuito</h2>
+
+                    <p className="text-white font-extralight tracking-wider">
+                        Conheça o nosso Manual da Universidade Corporativa. Nele, <br />
+                        você encontrará os 6 passos para uma implantação de <br />
+                        sucesso na sua empresa. Aproveite!
+                    </p>
+
+                    <MainButton 
+                        titulo="BAIXE AGORA" 
+                        backgroundColor="bg-white"
+                        textColor="text-[#ee5923]"
+                        estilosExtras="w-52 mt-4"
+                    />
+
                 </div>
 
                 <div>
@@ -85,6 +115,7 @@ export default function Main() {
                         alt="E-book sobre  6 Passos para uma implantação de Sucesso"
                     />
                 </div>
+
             </section>
 
             <section>

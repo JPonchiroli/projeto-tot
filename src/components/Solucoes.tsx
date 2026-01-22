@@ -5,6 +5,10 @@ type SolucoesProps = {
 
 export default function Solucoes({ src, alt }: SolucoesProps) {
     return (
-        <img src={src} alt={alt} />
+        <img 
+            className="hover:scale-120 transition-transform duration-200"
+            src={src} 
+            alt={alt} 
+        />
     )
 }
