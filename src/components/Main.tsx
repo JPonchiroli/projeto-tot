@@ -6,6 +6,8 @@ import consultoriaEducacional from "../assets/cursos-personalizados.avif"
 import Solucoes from "./Solucoes"
 import InfoCards from "./InfoCards"
 import Form from "./Form"
+import CarouselClientes from "./CarouselClientes"
+import CarrouselCursos from "./CarouselCursos"
 
 export default function Main() {
     return (
@@ -28,7 +30,9 @@ export default function Main() {
 
             <section>
                 <h2>Nossos cliente</h2>
-                <p>As empresas que geramos as experiências desejadas!s</p>
+                <p>As empresas que geramos as experiências desejadas!</p>
+
+                <CarouselClientes />
             </section>
 
             <section>
@@ -85,6 +89,8 @@ export default function Main() {
 
             <section>
                 <h2>Confira os nossos Cursos de Prateleira</h2>
+
+                <CarrouselCursos />
             </section>
 
             <section>
