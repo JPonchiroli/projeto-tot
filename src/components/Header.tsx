@@ -10,7 +10,7 @@ export default function Header() {
 
                 <img src={logo} alt="TOT Logo" />
 
-                <div className="hidden lg:flex md:gap-3">
+                <div className="hidden xl:flex xl:gap-3">
 
                     <HeaderButton titulo="Cursos Personalizados" />
                     <HeaderButton titulo="Cursos de Prateleira" />
@@ -21,7 +21,7 @@ export default function Header() {
 
                 </div>
 
-                <div className='hover:cursor-pointer lg:hidden'>
+                <div className='hover:cursor-pointer xl:hidden'>
                     <SideMenu
                         menus={[
                             "Cursos Personalizados",
