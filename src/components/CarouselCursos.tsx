@@ -35,7 +35,7 @@ export default function CarrouselCursos() {
             <img
               src={logo}
               alt="Curso"
-              className="h-100"
+              className="h-60 sm:h-100"
             />
           </SwiperSlide>
         ))}

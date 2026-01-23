@@ -4,9 +4,13 @@ export default function Form() {
     return (
         <div className="flex flex-col justify-center text-center">
 
-            <h2 className="text-white text-4xl pb-5 font-semibold">Agende uma demonstração</h2>
+            <h2 className="text-white text-2xl pb-5 font-bold
+                            sm:text-4xl">
+                Agende uma demonstração
+            </h2>
 
-            <form className="flex flex-col px-17">
+            <form className="flex flex-col 
+                            sm:px-17">
                 <Input type="text" name="nome" id="nome" placeholder="Nome"/>
                 <Input type="text" name="email" id="email" placeholder="Seu email corporativo"/>
                 <Input type="text" name="empresa" id="empresa" placeholder="Qual empresa você trabalha"/>

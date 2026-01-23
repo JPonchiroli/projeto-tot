@@ -1,11 +1,12 @@
 export default function Footer() {
     return (
-            <footer className="bg-[#e34926] text-white py-10">
-            <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row gap-10 justify-between items-start mx-20">
+        <footer className="bg-[#e34926] text-white py-10">
+            <div className="container mx-auto sm:px-6">
+                <div className="flex flex-col gap-10 justify-start items-start mx-10
+                                sm:justify-between sm:flex-row sm:mx-20">
 
                     <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-4">
+                        <div className="flex gap-2 mb-4 items-start sm:items-center">
                             <h2 className="text-xl font-bold">Contato</h2>
                         </div>
 
@@ -37,7 +38,8 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="flex-1 max-w-md">
+                    <div className="flex-1 max-w-md hidden
+                                    sm:block">
                         <h2 className="text-2xl font-bold mb-5">Se inscreva para receber novidades</h2>
 
                         <form className="space-y-4">
