@@ -1,0 +1,18 @@
+import NewsletterSection from "../components/NewsletterSection"
+import Header from "../components/Header"
+import Main from "../components/Main"
+import Footer from "../components/Footer"
+import '../styles/App.css'
+
+function Home() {
+  return (
+    <>
+      <NewsletterSection />
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  )
+}
+
+export default Home
