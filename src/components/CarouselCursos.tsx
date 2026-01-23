@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const logos = Object.values(
     import.meta.glob("/src/assets/cursos/*.{png,avif}", {
         eager: true,
         as: "url",
     })
-)
-
-import "swiper/css";
+) 
 
 export default function CarrouselCursos() {
   return (
@@ -18,13 +17,13 @@ export default function CarrouselCursos() {
         loop={true}
         slidesPerView="auto"
         spaceBetween={10}
-        speed={1000}
+        speed={5000}
         autoplay={{
-          delay: 0,
+          delay: 1,
           disableOnInteraction: false,
-          pauseOnMouseEnter: true,
+          pauseOnMouseEnter: false,
         }}
-        allowTouchMove={false}
+        allowTouchMove={true}
         className="ease-linear!"
       >
         {logos.map((logo, index) => (

@@ -33,13 +33,13 @@ export default function ClientsCarousel() {
         loop={true}
         slidesPerView="auto"
         spaceBetween={10}
-        speed={1000}
+        speed={5000}
         autoplay={{
-          delay: 0,
+          delay: 1,
           disableOnInteraction: false,
-          pauseOnMouseEnter: true,
+          pauseOnMouseEnter: false,
         }}
-        allowTouchMove={false}
+        allowTouchMove={true}
         className="ease-linear!"
       >
         {logos.map((logo, index) => (

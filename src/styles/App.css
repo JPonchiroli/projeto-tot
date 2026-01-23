@@ -3,3 +3,12 @@
 body {
   font-family: "Poppins", sabs-serif;
 }
+
+:root {
+  --swiper-wrapper-transition-timing-function: linear !important;
+}
+
+/* Or target the swiper-wrapper class directly */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
