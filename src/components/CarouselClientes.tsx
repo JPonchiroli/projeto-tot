@@ -50,7 +50,7 @@ export default function ClientsCarousel() {
             <img
               src={logo}
               alt="Cliente"
-              className="h-12 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
+              className="h-12 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition  hover:cursor-grab"
             />
           </SwiperSlide>
         ))}

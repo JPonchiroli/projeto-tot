@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 body {
-  font-family: "Poppins", sabs-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
   --swiper-wrapper-transition-timing-function: linear !important;
 }
 
-/* Or target the swiper-wrapper class directly */
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }

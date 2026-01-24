@@ -39,30 +39,30 @@ export default function Footer() {
                     </div>
 
                     <div className="flex-1 max-w-md hidden
-                                    sm:block">
+                                    md:block">
                         <h2 className="text-2xl font-bold mb-5">Se inscreva para receber novidades</h2>
 
                         <form className="space-y-4">
-                        <input
-                            className="w-full p-3 bg-white text-gray-500 rounded placeholder-gray-400"
-                            placeholder="Escreva seu nome aqui"
-                            type="text"
-                            required
-                        />
+                            <input
+                                className="w-full p-3 bg-white text-gray-500 rounded placeholder-gray-400 text-xs lg:text-base"
+                                placeholder="Escreva seu nome aqui"
+                                type="text"
+                                required
+                            />
 
-                        <input
-                            className="w-full p-3 bg-white text-gray-500 rounded placeholder-gray-400"
-                            placeholder="Escreva seu melhor e-mail aqui"
-                            type="email"
-                            required
-                        />
+                            <input
+                                className="w-full p-3 bg-white text-gray-500 rounded placeholder-gray-400 text-xs lg:text-base"
+                                placeholder="Escreva seu melhor e-mail aqui"
+                                type="email"
+                                required
+                            />
 
-                        <button 
-                            className="w-full bg-[#ffe5c9] text-black rounded-lg py-3 font-medium hover:bg-[#ffdac0] transition"
-                            type="submit"
-                        >
-                            OK
-                        </button>
+                            <button 
+                                className="w-full bg-[#ffe5c9] text-black rounded-lg py-3 font-medium hover:bg-[#ffdac0] transition hover:cursor-pointer"
+                                type="submit"
+                            >
+                                OK
+                            </button>
                         </form>
                     </div>
 

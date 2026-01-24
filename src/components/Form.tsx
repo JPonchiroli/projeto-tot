@@ -17,8 +17,8 @@ export default function Form() {
                 <Input type="text" name="ajuda" id="ajuda" placeholder="Digite aqui como podemos te ajudar"/>
 
                 <button
-                    className="bg-[#e34926] text-black rounded-[5px] inline-flex self-center px-20 py-4 mt-3"
-                    type="submit"
+                    className="bg-[#e34926] text-black rounded-[5px] inline-flex self-center px-20 py-4 mt-3
+                                hover:cursor-pointer hover:bg-[#ad3c23]"
                 >
                     Enviar
                 </button>
