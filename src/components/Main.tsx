@@ -15,22 +15,26 @@ export default function Main() {
         <main>
             <section className="bg-[#e34926] flex flex-col text-center p-7">
 
-                <h1 className="font-bold tracking-wider text-xl px-2 sm:text-white">
+                <h1 className="font-bold tracking-wider text-xl px-2
+                            sm:text-white 2xl:px-110 xl:text-4xl">
                     Soluções educativas, entrega de conhecimento 
                     e conexão para a sua organização.
                 </h1>
 
-                <p className="text-sm sm:text-white my-3 tracking-wider">
+                <p className="text-sm my-3 tracking-wider
+                            sm:text-white md:text-base">
                     Conteúdos estratégicos, desenvolvidos para a sua realidade, adaptados para os seus <br />
                     colaboradores e personalizados para sua empresa. <span className="font-semibold">Com a TOT, o cliente nunca anda sozinho.</span>
                 </p>
 
                 <div className="m-5">
-                    <MainButton 
-                        titulo="Agendar demonstração"
-                        backgroundColor="bg-[#ffe5c9]"
-                        textColor="text-black"
-                    />
+                    <a href="#formDemonstracao">
+                        <MainButton 
+                            titulo="Agendar demonstração"
+                            backgroundColor="bg-[#ffe5c9]"
+                            textColor="text-black"
+                        />
+                    </a>
                 </div>
 
             </section>
@@ -65,8 +69,8 @@ export default function Main() {
 
             </section>
 
-            <section className="flex flex-col gap-8 justify-center m-10 
-                                sm:flex-row">
+            <section className="flex flex-col gap-4 justify-center m-10 
+                                md:flex-row">
 
                 <InfoCards 
                     src="https://static.wixstatic.com/media/611af1_bc8bd57236f84fbdb8aab06f2625cd03~mv2.png/v1/fill/w_114,h_102,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aprendizes_impactados.png"
@@ -134,8 +138,11 @@ export default function Main() {
                 <CarrouselCursos />
             </section>
 
-            <section className="bg-[#151616] mx-5 my-5 px-7 py-7 rounded-3xl
-                                lg:mx-35">
+            <section 
+                className="bg-[#151616] mx-5 my-5 px-7 py-7 rounded-3xl
+                                lg:mx-35"
+                id="formDemonstracao"
+            >
                 <Form />
             </section>
         </main>
